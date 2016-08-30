@@ -1726,7 +1726,7 @@ namespace Phoneword_Droid
 			public const int Splash = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int Splash2 = 2130837579;
+			public const int Splash1 = 2130837579;
 			
 			static Drawable()
 			{
