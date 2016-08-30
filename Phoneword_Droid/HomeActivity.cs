@@ -50,11 +50,17 @@ namespace Phoneword_Droid
 
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += OnFabButtonClicked;
+
+            HomePagerAdapter homePagerApt = new HomePagerAdapter(SupportFragmentManager);
+            ViewPager viewPager = FindViewById<ViewPager>(Resource.Id.viewpager);
+            viewPager.Adapter = homePagerApt;
+            TabLayout tab = FindViewById<TabLayout>(Resource.Id.tablayout);
+            tab.SetupWithViewPager(viewPager);
         }
 
         private void OnFabButtonClicked(object sender, EventArgs e)
         {
-            Snackbar bar = Snackbar.Make(FindViewById(Resource.Id.drawer_layout), "I'm a Snack bar.", Snackbar.LengthLong);
+            Snackbar bar = Snackbar.Make(FindViewById(Resource.Id.coordinator), "I'm a Snack bar.", Snackbar.LengthLong);
             bar.SetAction("Action", (View v) => {
                 Toast.MakeText(this, "Snaker Action", ToastLength.Long).Show();
             });
