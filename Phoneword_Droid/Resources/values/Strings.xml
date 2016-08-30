@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">Phone Word</string>
+    
+  <string name="hint_email">Email</string>
+  <string name="hint_password">Password</string>
+  
+  <string name="btn_login">Login</string>
+  <string name="btn_callhistory">Call History</string>
+
+  <string name="lnk_fogotpass">Foget Password?</string>
+
+  <string name="msg_invalid_email">enter a valid email address</string>
+  <string name="msg_invalid_password">between 4 and 10 alphanumeric characters</string>
+  <string name="msg_login_success">Login successfully</string>
+  <string name="msg_login_fail">User name or password is invalid</string>
+  <string name="msg_api_fail">API call failed</string>
+  <string name="msg_loading_default">Loading...</string>
+  <string name="msg_loading_auth">Authenticating...</string>
+
+  <string name="nav_item_attachment">Attachment</string>
+  <string name="nav_item_images">Images</string>
+  <string name="nav_item_location">My Location</string>
+  <string name="nav_sub_menu">Sub Menu</string>
+  <string name="nav_sub_menu_item01">Sub Menu Item 1</string>
+  <string name="nav_sub_menu_item02">Sub Menu Item 2</string>
+  <string name="drawer_header_text">Drawer Header</string>
+  <string name="second_activity_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur diam id aliquam scelerisque. Donec ultrices lacus vel dignissim pharetra. Vivamus pharetra augue quis rhoncus placerat. Sed ultricies at risus non cursus. Nam rutrum leo nec placerat consectetur. Vestibulum feugiat eleifend diam, nec interdum augue tincidunt sit amet. Praesent feugiat est auctor lacus consectetur, vitae pellentesque dolor laoreet.</string>
+  <string name="title_activity_second">SecondActivity</string>
+
+</resources>

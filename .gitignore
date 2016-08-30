@@ -1,0 +1,13 @@
+*.suo
+*.config
+/.vs
+/Apk
+/packages
+/Phoneword.DataModel/bin
+/Phoneword.DataModel/obj
+/phoneword.rest/bin
+/phoneword.rest/obj
+/Phoneword.WebApiClient/bin
+/Phoneword.WebApiClient/obj
+/Phoneword_Droid/bin
+/Phoneword_Droid/obj
