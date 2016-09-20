@@ -33,7 +33,7 @@ namespace Phoneword_Droid
 
         public void GotoLogin()
         {
-            Intent intent = new Intent(this, typeof(LoginActivity));
+            Intent intent = new Intent(this, typeof(Home2Activity));
             StartActivity(intent);
             Finish();
         }

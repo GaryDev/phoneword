@@ -1,0 +1,6 @@
+D:\DEV\NET\Phoneword\Phoneword.ViewModel\bin\Debug\Phoneword.ViewModel.dll
+D:\DEV\NET\Phoneword\Phoneword.ViewModel\bin\Debug\Phoneword.ViewModel.pdb
+D:\DEV\NET\Phoneword\Phoneword.ViewModel\bin\Debug\Newtonsoft.Json.dll
+D:\DEV\NET\Phoneword\Phoneword.ViewModel\bin\Debug\Newtonsoft.Json.xml
+D:\DEV\NET\Phoneword\Phoneword.ViewModel\obj\Debug\Phoneword.ViewModel.dll
+D:\DEV\NET\Phoneword\Phoneword.ViewModel\obj\Debug\Phoneword.ViewModel.pdb

@@ -18,7 +18,7 @@ namespace Phoneword.Factory
     {
         public static Dialog CreateDialog(Context context, string tip = null)
         {
-            Dialog dialog = new Dialog(context, Resource.Style.dialog);
+            Dialog dialog = new Dialog(context, Resource.Style.MyDialog);
             dialog.SetContentView(Resource.Layout.Dialog);
             dialog.SetCanceledOnTouchOutside(false);
 
@@ -37,8 +37,9 @@ namespace Phoneword.Factory
 
         public static ProgressDialog CreateProgressDialog(Context context, string tip = null)
         {
-            ProgressDialog dialog = new ProgressDialog(context, Resource.Style.dialog);
+            ProgressDialog dialog = new ProgressDialog(context, Resource.Style.MyDialog);
             dialog.Indeterminate = true;
+            dialog.SetCanceledOnTouchOutside(false);
             if (string.IsNullOrWhiteSpace(tip))
                 dialog.SetMessage(context.GetString(Resource.String.msg_loading_default));
             else

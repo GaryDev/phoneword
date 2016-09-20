@@ -18,6 +18,8 @@
   <string name="msg_loading_default">Loading...</string>
   <string name="msg_loading_auth">Authenticating...</string>
 
+  <string name="menu_action_search">Search</string>
+
   <string name="nav_item_attachment">Attachment</string>
   <string name="nav_item_images">Images</string>
   <string name="nav_item_location">My Location</string>

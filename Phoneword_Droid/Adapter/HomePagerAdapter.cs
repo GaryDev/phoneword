@@ -15,7 +15,7 @@ namespace Phoneword_Droid
 {
     public class HomePagerAdapter : FragmentStatePagerAdapter
     {
-        private const int TAB_COUNT = 3;
+        private const int TAB_COUNT = 4;
 
         public HomePagerAdapter(FragmentManager fm) : base(fm)
         {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Phoneword.DataModel
+namespace Phoneword.ViewModel
 {
     public class AppConfig
     {

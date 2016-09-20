@@ -1,4 +1,4 @@
-﻿using Phoneword.DataModel;
+﻿using Phoneword.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;

@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Phoneword.Command;
-using Phoneword.DataModel;
+using Phoneword.ViewModel;
 using Phoneword.Util;
 using Phoneword_Droid;
 

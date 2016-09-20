@@ -83,6 +83,22 @@ namespace Phoneword_Droid
 			}
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f0c0000
+			public const int nav_drawer_labels = 2131492864;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -925,32 +941,32 @@ namespace Phoneword_Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0b0047
-			public const int abc_background_cache_hint_selector_material_dark = 2131427399;
-			
-			// aapt resource value: 0x7f0b0048
-			public const int abc_background_cache_hint_selector_material_light = 2131427400;
-			
 			// aapt resource value: 0x7f0b0049
-			public const int abc_color_highlight_material = 2131427401;
+			public const int abc_background_cache_hint_selector_material_dark = 2131427401;
+			
+			// aapt resource value: 0x7f0b004a
+			public const int abc_background_cache_hint_selector_material_light = 2131427402;
+			
+			// aapt resource value: 0x7f0b004b
+			public const int abc_color_highlight_material = 2131427403;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int abc_input_method_navigation_guard = 2131427328;
 			
-			// aapt resource value: 0x7f0b004a
-			public const int abc_primary_text_disable_only_material_dark = 2131427402;
-			
-			// aapt resource value: 0x7f0b004b
-			public const int abc_primary_text_disable_only_material_light = 2131427403;
-			
 			// aapt resource value: 0x7f0b004c
-			public const int abc_primary_text_material_dark = 2131427404;
+			public const int abc_primary_text_disable_only_material_dark = 2131427404;
 			
 			// aapt resource value: 0x7f0b004d
-			public const int abc_primary_text_material_light = 2131427405;
+			public const int abc_primary_text_disable_only_material_light = 2131427405;
 			
 			// aapt resource value: 0x7f0b004e
-			public const int abc_search_url_text = 2131427406;
+			public const int abc_primary_text_material_dark = 2131427406;
+			
+			// aapt resource value: 0x7f0b004f
+			public const int abc_primary_text_material_light = 2131427407;
+			
+			// aapt resource value: 0x7f0b0050
+			public const int abc_search_url_text = 2131427408;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int abc_search_url_text_normal = 2131427329;
@@ -961,14 +977,11 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f0b0003
 			public const int abc_search_url_text_selected = 2131427331;
 			
-			// aapt resource value: 0x7f0b004f
-			public const int abc_secondary_text_material_dark = 2131427407;
+			// aapt resource value: 0x7f0b0051
+			public const int abc_secondary_text_material_dark = 2131427409;
 			
-			// aapt resource value: 0x7f0b0050
-			public const int abc_secondary_text_material_light = 2131427408;
-			
-			// aapt resource value: 0x7f0b0046
-			public const int accent = 2131427398;
+			// aapt resource value: 0x7f0b0052
+			public const int abc_secondary_text_material_light = 2131427410;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int accent_material_dark = 2131427332;
@@ -1011,6 +1024,15 @@ namespace Phoneword_Droid
 			
 			// aapt resource value: 0x7f0b0011
 			public const int button_material_light = 2131427345;
+			
+			// aapt resource value: 0x7f0b0045
+			public const int colorAccent = 2131427397;
+			
+			// aapt resource value: 0x7f0b0043
+			public const int colorPrimary = 2131427395;
+			
+			// aapt resource value: 0x7f0b0044
+			public const int colorPrimaryDark = 2131427396;
 			
 			// aapt resource value: 0x7f0b003a
 			public const int design_fab_shadow_end_color = 2131427386;
@@ -1105,11 +1127,8 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f0b0027
 			public const int material_grey_900 = 2131427367;
 			
-			// aapt resource value: 0x7f0b0044
-			public const int primary = 2131427396;
-			
-			// aapt resource value: 0x7f0b0045
-			public const int primary_dark = 2131427397;
+			// aapt resource value: 0x7f0b0048
+			public const int navigationBarColor = 2131427400;
 			
 			// aapt resource value: 0x7f0b0028
 			public const int primary_dark_material_dark = 2131427368;
@@ -1159,11 +1178,11 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f0b0037
 			public const int switch_thumb_disabled_material_light = 2131427383;
 			
-			// aapt resource value: 0x7f0b0051
-			public const int switch_thumb_material_dark = 2131427409;
+			// aapt resource value: 0x7f0b0053
+			public const int switch_thumb_material_dark = 2131427411;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int switch_thumb_material_light = 2131427410;
+			// aapt resource value: 0x7f0b0054
+			public const int switch_thumb_material_light = 2131427412;
 			
 			// aapt resource value: 0x7f0b0038
 			public const int switch_thumb_normal_material_dark = 2131427384;
@@ -1171,8 +1190,11 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f0b0039
 			public const int switch_thumb_normal_material_light = 2131427385;
 			
-			// aapt resource value: 0x7f0b0043
-			public const int transparent = 2131427395;
+			// aapt resource value: 0x7f0b0046
+			public const int textColorPrimary = 2131427398;
+			
+			// aapt resource value: 0x7f0b0047
+			public const int windowBackground = 2131427399;
 			
 			static Color()
 			{
@@ -1367,6 +1389,12 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f050005
 			public const int abc_text_size_title_material_toolbar = 2131034117;
 			
+			// aapt resource value: 0x7f050063
+			public const int activity_horizontal_margin = 2131034211;
+			
+			// aapt resource value: 0x7f050064
+			public const int activity_vertical_margin = 2131034212;
+			
 			// aapt resource value: 0x7f050051
 			public const int design_appbar_elevation = 2131034193;
 			
@@ -1474,6 +1502,9 @@ namespace Phoneword_Droid
 			
 			// aapt resource value: 0x7f050000
 			public const int item_touch_helper_max_drag_scroll_per_frame = 2131034112;
+			
+			// aapt resource value: 0x7f050065
+			public const int nav_drawer_width = 2131034213;
 			
 			// aapt resource value: 0x7f050046
 			public const int notification_large_icon_height = 2131034182;
@@ -1690,43 +1721,49 @@ namespace Phoneword_Droid
 			public const int design_snackbar_background = 2130837567;
 			
 			// aapt resource value: 0x7f020040
-			public const int ic_attachment = 2130837568;
+			public const int ic_account = 2130837568;
 			
 			// aapt resource value: 0x7f020041
-			public const int ic_done = 2130837569;
+			public const int ic_attachment = 2130837569;
 			
 			// aapt resource value: 0x7f020042
-			public const int ic_emoticon = 2130837570;
+			public const int ic_done = 2130837570;
 			
 			// aapt resource value: 0x7f020043
-			public const int ic_location = 2130837571;
+			public const int ic_emoticon = 2130837571;
 			
 			// aapt resource value: 0x7f020044
-			public const int ic_menu = 2130837572;
+			public const int ic_location = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int ic_photo = 2130837573;
+			public const int ic_menu = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int Icon = 2130837574;
+			public const int ic_photo = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int logo = 2130837575;
-			
-			// aapt resource value: 0x7f02004c
-			public const int notification_template_icon_bg = 2130837580;
+			public const int ic_search = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int progressbar = 2130837576;
+			public const int Icon = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int shape_dialog = 2130837577;
+			public const int logo = 2130837577;
+			
+			// aapt resource value: 0x7f02004e
+			public const int notification_template_icon_bg = 2130837582;
 			
 			// aapt resource value: 0x7f02004a
-			public const int Splash = 2130837578;
+			public const int progressbar = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int Splash1 = 2130837579;
+			public const int shape_dialog = 2130837579;
+			
+			// aapt resource value: 0x7f02004c
+			public const int Splash = 2130837580;
+			
+			// aapt resource value: 0x7f02004d
+			public const int Splash1 = 2130837581;
 			
 			static Drawable()
 			{
@@ -1741,20 +1778,20 @@ namespace Phoneword_Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060075
-			public const int CallButton = 2131099765;
+			// aapt resource value: 0x7f06007c
+			public const int CallButton = 2131099772;
 			
-			// aapt resource value: 0x7f060076
-			public const int CallHistoryButton = 2131099766;
+			// aapt resource value: 0x7f06007d
+			public const int CallHistoryButton = 2131099773;
 			
-			// aapt resource value: 0x7f060073
-			public const int PhoneNumberText = 2131099763;
+			// aapt resource value: 0x7f06007a
+			public const int PhoneNumberText = 2131099770;
 			
-			// aapt resource value: 0x7f060074
-			public const int TranslateButton = 2131099764;
+			// aapt resource value: 0x7f06007b
+			public const int TranslateButton = 2131099771;
 			
-			// aapt resource value: 0x7f060077
-			public const int action0 = 2131099767;
+			// aapt resource value: 0x7f06007e
+			public const int action0 = 2131099774;
 			
 			// aapt resource value: 0x7f060056
 			public const int action_bar = 2131099734;
@@ -1780,8 +1817,8 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f060057
 			public const int action_context_bar = 2131099735;
 			
-			// aapt resource value: 0x7f06007b
-			public const int action_divider = 2131099771;
+			// aapt resource value: 0x7f060082
+			public const int action_divider = 2131099778;
 			
 			// aapt resource value: 0x7f060003
 			public const int action_menu_divider = 2131099651;
@@ -1798,6 +1835,9 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f06003b
 			public const int action_mode_close_button = 2131099707;
 			
+			// aapt resource value: 0x7f060091
+			public const int action_search = 2131099793;
+			
 			// aapt resource value: 0x7f06003c
 			public const int activity_chooser_view_content = 2131099708;
 			
@@ -1813,14 +1853,14 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f060029
 			public const int bottom = 2131099689;
 			
-			// aapt resource value: 0x7f060071
-			public const int btn_login = 2131099761;
+			// aapt resource value: 0x7f060078
+			public const int btn_login = 2131099768;
 			
 			// aapt resource value: 0x7f06004c
 			public const int buttonPanel = 2131099724;
 			
-			// aapt resource value: 0x7f060078
-			public const int cancel_action = 2131099768;
+			// aapt resource value: 0x7f06007f
+			public const int cancel_action = 2131099775;
 			
 			// aapt resource value: 0x7f06002a
 			public const int center = 2131099690;
@@ -1834,8 +1874,8 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f06004e
 			public const int checkbox = 2131099726;
 			
-			// aapt resource value: 0x7f06007e
-			public const int chronometer = 2131099774;
+			// aapt resource value: 0x7f060085
+			public const int chronometer = 2131099781;
 			
 			// aapt resource value: 0x7f060032
 			public const int clip_horizontal = 2131099698;
@@ -1846,11 +1886,17 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f06001e
 			public const int collapseActionView = 2131099678;
 			
+			// aapt resource value: 0x7f060074
+			public const int container_body = 2131099764;
+			
+			// aapt resource value: 0x7f060073
+			public const int container_toolbar = 2131099763;
+			
 			// aapt resource value: 0x7f060047
 			public const int contentPanel = 2131099719;
 			
-			// aapt resource value: 0x7f060069
-			public const int coordinator = 2131099753;
+			// aapt resource value: 0x7f06006c
+			public const int coordinator = 2131099756;
 			
 			// aapt resource value: 0x7f06004b
 			public const int custom = 2131099723;
@@ -1867,8 +1913,14 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f06000e
 			public const int disableHome = 2131099662;
 			
-			// aapt resource value: 0x7f060068
-			public const int drawer_layout = 2131099752;
+			// aapt resource value: 0x7f06006a
+			public const int drawerList = 2131099754;
+			
+			// aapt resource value: 0x7f06006b
+			public const int drawer_layout = 2131099755;
+			
+			// aapt resource value: 0x7f060072
+			public const int drawer_layout2 = 2131099762;
 			
 			// aapt resource value: 0x7f060058
 			public const int edit_query = 2131099736;
@@ -1876,8 +1928,8 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f06001b
 			public const int end = 2131099675;
 			
-			// aapt resource value: 0x7f060083
-			public const int end_padder = 2131099779;
+			// aapt resource value: 0x7f06008a
+			public const int end_padder = 2131099786;
 			
 			// aapt resource value: 0x7f060023
 			public const int enterAlways = 2131099683;
@@ -1894,8 +1946,8 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f06004d
 			public const int expanded_menu = 2131099725;
 			
-			// aapt resource value: 0x7f06006d
-			public const int fab = 2131099757;
+			// aapt resource value: 0x7f060070
+			public const int fab = 2131099760;
 			
 			// aapt resource value: 0x7f060034
 			public const int fill = 2131099700;
@@ -1908,6 +1960,9 @@ namespace Phoneword_Droid
 			
 			// aapt resource value: 0x7f060037
 			public const int @fixed = 2131099703;
+			
+			// aapt resource value: 0x7f060075
+			public const int fragment_navigation_drawer = 2131099765;
 			
 			// aapt resource value: 0x7f060005
 			public const int home = 2131099653;
@@ -1924,29 +1979,32 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f06003e
 			public const int image = 2131099710;
 			
-			// aapt resource value: 0x7f060082
-			public const int info = 2131099778;
+			// aapt resource value: 0x7f060089
+			public const int info = 2131099785;
 			
-			// aapt resource value: 0x7f06006f
-			public const int input_email = 2131099759;
+			// aapt resource value: 0x7f060076
+			public const int input_email = 2131099766;
 			
-			// aapt resource value: 0x7f060070
-			public const int input_password = 2131099760;
+			// aapt resource value: 0x7f060077
+			public const int input_password = 2131099767;
 			
 			// aapt resource value: 0x7f060000
 			public const int item_touch_helper_previous_elevation = 2131099648;
 			
+			// aapt resource value: 0x7f060068
+			public const int label = 2131099752;
+			
 			// aapt resource value: 0x7f06002e
 			public const int left = 2131099694;
 			
-			// aapt resource value: 0x7f06007c
-			public const int line1 = 2131099772;
+			// aapt resource value: 0x7f060083
+			public const int line1 = 2131099779;
 			
-			// aapt resource value: 0x7f060080
-			public const int line3 = 2131099776;
+			// aapt resource value: 0x7f060087
+			public const int line3 = 2131099783;
 			
-			// aapt resource value: 0x7f060072
-			public const int link_signup = 2131099762;
+			// aapt resource value: 0x7f060079
+			public const int link_signup = 2131099769;
 			
 			// aapt resource value: 0x7f06000b
 			public const int listMode = 2131099659;
@@ -1954,8 +2012,14 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f060040
 			public const int list_item = 2131099712;
 			
-			// aapt resource value: 0x7f06007a
-			public const int media_actions = 2131099770;
+			// aapt resource value: 0x7f060081
+			public const int media_actions = 2131099777;
+			
+			// aapt resource value: 0x7f06008f
+			public const int menu_action_search = 2131099791;
+			
+			// aapt resource value: 0x7f060090
+			public const int menu_action_setting = 2131099792;
 			
 			// aapt resource value: 0x7f06001c
 			public const int middle = 2131099676;
@@ -1966,17 +2030,20 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f060015
 			public const int multiply = 2131099669;
 			
-			// aapt resource value: 0x7f060085
-			public const int navigation_item_attachment = 2131099781;
+			// aapt resource value: 0x7f060069
+			public const int nav_header_container = 2131099753;
 			
-			// aapt resource value: 0x7f060086
-			public const int navigation_item_images = 2131099782;
+			// aapt resource value: 0x7f06008c
+			public const int navigation_item_attachment = 2131099788;
 			
-			// aapt resource value: 0x7f060087
-			public const int navigation_item_location = 2131099783;
+			// aapt resource value: 0x7f06008d
+			public const int navigation_item_images = 2131099789;
 			
-			// aapt resource value: 0x7f06006e
-			public const int navigation_view = 2131099758;
+			// aapt resource value: 0x7f06008e
+			public const int navigation_item_location = 2131099790;
+			
+			// aapt resource value: 0x7f060071
+			public const int navigation_view = 2131099761;
 			
 			// aapt resource value: 0x7f060020
 			public const int never = 2131099680;
@@ -2005,8 +2072,8 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f060050
 			public const int radio = 2131099728;
 			
-			// aapt resource value: 0x7f060084
-			public const int recyclerview = 2131099780;
+			// aapt resource value: 0x7f06008b
+			public const int recyclerview = 2131099787;
 			
 			// aapt resource value: 0x7f06002f
 			public const int right = 2131099695;
@@ -2089,8 +2156,8 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f060030
 			public const int start = 2131099696;
 			
-			// aapt resource value: 0x7f060079
-			public const int status_bar_latest_event_content = 2131099769;
+			// aapt resource value: 0x7f060080
+			public const int status_bar_latest_event_content = 2131099776;
 			
 			// aapt resource value: 0x7f060061
 			public const int submit_area = 2131099745;
@@ -2098,20 +2165,20 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f06000d
 			public const int tabMode = 2131099661;
 			
-			// aapt resource value: 0x7f06006b
-			public const int tablayout = 2131099755;
+			// aapt resource value: 0x7f06006e
+			public const int tablayout = 2131099758;
 			
-			// aapt resource value: 0x7f060081
-			public const int text = 2131099777;
+			// aapt resource value: 0x7f060088
+			public const int text = 2131099784;
 			
-			// aapt resource value: 0x7f06007f
-			public const int text2 = 2131099775;
+			// aapt resource value: 0x7f060086
+			public const int text2 = 2131099782;
 			
 			// aapt resource value: 0x7f060049
 			public const int textSpacerNoButtons = 2131099721;
 			
-			// aapt resource value: 0x7f06007d
-			public const int time = 2131099773;
+			// aapt resource value: 0x7f060084
+			public const int time = 2131099780;
 			
 			// aapt resource value: 0x7f060042
 			public const int title = 2131099714;
@@ -2119,8 +2186,8 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f060045
 			public const int title_template = 2131099717;
 			
-			// aapt resource value: 0x7f06006a
-			public const int toolbar = 2131099754;
+			// aapt resource value: 0x7f06006d
+			public const int toolbar = 2131099757;
 			
 			// aapt resource value: 0x7f060031
 			public const int top = 2131099697;
@@ -2140,8 +2207,8 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f06000a
 			public const int view_offset_helper = 2131099658;
 			
-			// aapt resource value: 0x7f06006c
-			public const int viewpager = 2131099756;
+			// aapt resource value: 0x7f06006f
+			public const int viewpager = 2131099759;
 			
 			// aapt resource value: 0x7f060021
 			public const int withText = 2131099681;
@@ -2299,58 +2366,76 @@ namespace Phoneword_Droid
 			public const int drawer_header = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int Home = 2130903075;
+			public const int fragment_home = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int Login3 = 2130903076;
+			public const int fragment_navigation_drawer = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int Main = 2130903077;
+			public const int Home = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int notification_media_action = 2130903078;
+			public const int Home2 = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int notification_media_cancel_action = 2130903079;
+			public const int Login3 = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int notification_template_big_media = 2130903080;
+			public const int Main = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int notification_template_big_media_narrow = 2130903081;
+			public const int nav_drawer_row = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int notification_template_lines = 2130903082;
+			public const int notification_media_action = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int notification_template_media = 2130903083;
+			public const int notification_media_cancel_action = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int notification_template_part_chronometer = 2130903084;
+			public const int notification_template_big_media = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int notification_template_part_time = 2130903085;
+			public const int notification_template_big_media_narrow = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int recycler_view = 2130903086;
+			public const int notification_template_lines = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int row_simplelist = 2130903087;
+			public const int notification_template_media = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int select_dialog_item_material = 2130903088;
+			public const int notification_template_part_chronometer = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int select_dialog_multichoice_material = 2130903089;
+			public const int notification_template_part_time = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int select_dialog_singlechoice_material = 2130903090;
+			public const int recycler_view = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int support_simple_spinner_dropdown_item = 2130903091;
+			public const int row_simplelist = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int Welcome = 2130903092;
+			public const int Search = 2130903092;
+			
+			// aapt resource value: 0x7f030035
+			public const int select_dialog_item_material = 2130903093;
+			
+			// aapt resource value: 0x7f030036
+			public const int select_dialog_multichoice_material = 2130903094;
+			
+			// aapt resource value: 0x7f030037
+			public const int select_dialog_singlechoice_material = 2130903095;
+			
+			// aapt resource value: 0x7f030038
+			public const int support_simple_spinner_dropdown_item = 2130903096;
+			
+			// aapt resource value: 0x7f030039
+			public const int toolbar = 2130903097;
+			
+			// aapt resource value: 0x7f03003a
+			public const int Welcome = 2130903098;
 			
 			static Layout()
 			{
@@ -2365,8 +2450,14 @@ namespace Phoneword_Droid
 		public partial class Menu
 		{
 			
-			// aapt resource value: 0x7f0c0000
-			public const int drawer = 2131492864;
+			// aapt resource value: 0x7f0d0000
+			public const int drawer = 2131558400;
+			
+			// aapt resource value: 0x7f0d0001
+			public const int menu2 = 2131558401;
+			
+			// aapt resource value: 0x7f0d0002
+			public const int menu_search = 2131558402;
 			
 			static Menu()
 			{
@@ -2444,8 +2535,14 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f070016
 			public const int btn_login = 2131165206;
 			
-			// aapt resource value: 0x7f070026
-			public const int drawer_header_text = 2131165222;
+			// aapt resource value: 0x7f07002c
+			public const int drawer_close = 2131165228;
+			
+			// aapt resource value: 0x7f070028
+			public const int drawer_header_text = 2131165224;
+			
+			// aapt resource value: 0x7f07002b
+			public const int drawer_open = 2131165227;
 			
 			// aapt resource value: 0x7f070014
 			public const int hint_email = 2131165204;
@@ -2455,6 +2552,12 @@ namespace Phoneword_Droid
 			
 			// aapt resource value: 0x7f070018
 			public const int lnk_fogotpass = 2131165208;
+			
+			// aapt resource value: 0x7f070020
+			public const int menu_action_search = 2131165216;
+			
+			// aapt resource value: 0x7f070021
+			public const int menu_action_setting = 2131165217;
 			
 			// aapt resource value: 0x7f07001d
 			public const int msg_api_fail = 2131165213;
@@ -2477,32 +2580,50 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f07001b
 			public const int msg_login_success = 2131165211;
 			
-			// aapt resource value: 0x7f070020
-			public const int nav_item_attachment = 2131165216;
-			
-			// aapt resource value: 0x7f070021
-			public const int nav_item_images = 2131165217;
-			
 			// aapt resource value: 0x7f070022
-			public const int nav_item_location = 2131165218;
+			public const int nav_item_attachment = 2131165218;
+			
+			// aapt resource value: 0x7f07002e
+			public const int nav_item_friends = 2131165230;
+			
+			// aapt resource value: 0x7f07002d
+			public const int nav_item_home = 2131165229;
 			
 			// aapt resource value: 0x7f070023
-			public const int nav_sub_menu = 2131165219;
+			public const int nav_item_images = 2131165219;
 			
 			// aapt resource value: 0x7f070024
-			public const int nav_sub_menu_item01 = 2131165220;
+			public const int nav_item_location = 2131165220;
+			
+			// aapt resource value: 0x7f07002f
+			public const int nav_item_notifications = 2131165231;
 			
 			// aapt resource value: 0x7f070025
-			public const int nav_sub_menu_item02 = 2131165221;
+			public const int nav_sub_menu = 2131165221;
+			
+			// aapt resource value: 0x7f070026
+			public const int nav_sub_menu_item01 = 2131165222;
 			
 			// aapt resource value: 0x7f070027
-			public const int second_activity_text = 2131165223;
+			public const int nav_sub_menu_item02 = 2131165223;
+			
+			// aapt resource value: 0x7f070029
+			public const int second_activity_text = 2131165225;
 			
 			// aapt resource value: 0x7f070011
 			public const int status_bar_notification_info_overflow = 2131165201;
 			
-			// aapt resource value: 0x7f070028
-			public const int title_activity_second = 2131165224;
+			// aapt resource value: 0x7f07002a
+			public const int title_activity_second = 2131165226;
+			
+			// aapt resource value: 0x7f070031
+			public const int title_friends = 2131165233;
+			
+			// aapt resource value: 0x7f070032
+			public const int title_home = 2131165234;
+			
+			// aapt resource value: 0x7f070030
+			public const int title_messages = 2131165232;
 			
 			static String()
 			{
@@ -2946,8 +3067,14 @@ namespace Phoneword_Droid
 			// aapt resource value: 0x7f08012f
 			public const int Base_Widget_Design_TabLayout = 2131231023;
 			
+			// aapt resource value: 0x7f08013f
+			public const int MyDialog = 2131231039;
+			
+			// aapt resource value: 0x7f08013e
+			public const int MyPhoneWordTheme = 2131231038;
+			
 			// aapt resource value: 0x7f08013d
-			public const int MyTheme = 2131231037;
+			public const int MyPhoneWordTheme_Base = 2131231037;
 			
 			// aapt resource value: 0x7f08000f
 			public const int Platform_AppCompat = 2131230735;
@@ -3470,9 +3597,6 @@ namespace Phoneword_Droid
 			
 			// aapt resource value: 0x7f08013c
 			public const int Widget_Design_TextInputLayout = 2131231036;
-			
-			// aapt resource value: 0x7f08013e
-			public const int dialog = 2131231038;
 			
 			static Style()
 			{

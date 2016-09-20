@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Phoneword.Factory;
 using Phoneword.Util;
-using Phoneword.DataModel;
+using Phoneword.ViewModel;
 using Phoneword.Command;
 using Android.Support.V7.App;
 

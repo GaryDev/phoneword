@@ -43,6 +43,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.1.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -87,7 +91,13 @@
   <ItemGroup>
     <Compile Include="Actions\AuthenticationAction.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Authentication\AuthService.cs" />
+    <Compile Include="Authentication\IAuthService.cs" />
     <Compile Include="Controllers\AuthenticationController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Filters\ApiAuthenticationFilter.cs" />
+    <Compile Include="Filters\BasicAuthenticationIdentity.cs" />
+    <Compile Include="Filters\GenericAuthenticationFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -108,9 +118,17 @@
     <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Phoneword.DataModel\Phoneword.DataModel.csproj">
-      <Project>{86050fbc-29dc-4908-a275-075342c055d4}</Project>
-      <Name>Phoneword.DataModel</Name>
+    <ProjectReference Include="..\Phoneword.Entities\Phoneword.Entities.csproj">
+      <Project>{0c32e479-43af-43c9-92c6-b725afc65b84}</Project>
+      <Name>Phoneword.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Phoneword.Services\Phoneword.Services.csproj">
+      <Project>{6ff67d23-a6b2-4ee1-a9f1-018f79b7837b}</Project>
+      <Name>Phoneword.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Phoneword.ViewModel\Phoneword.ViewModel.csproj">
+      <Project>{cb4a5afa-9147-47a4-846f-12fa9057d5c4}</Project>
+      <Name>Phoneword.ViewModel</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

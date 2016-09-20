@@ -18,6 +18,9 @@
   <string name="msg_loading_default">Loading...</string>
   <string name="msg_loading_auth">Authenticating...</string>
 
+  <string name="menu_action_search">Search</string>
+  <string name="menu_action_setting">Setting</string>
+
   <string name="nav_item_attachment">Attachment</string>
   <string name="nav_item_images">Images</string>
   <string name="nav_item_location">My Location</string>
@@ -27,6 +30,22 @@
   <string name="drawer_header_text">Drawer Header</string>
   <string name="second_activity_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur diam id aliquam scelerisque. Donec ultrices lacus vel dignissim pharetra. Vivamus pharetra augue quis rhoncus placerat. Sed ultricies at risus non cursus. Nam rutrum leo nec placerat consectetur. Vestibulum feugiat eleifend diam, nec interdum augue tincidunt sit amet. Praesent feugiat est auctor lacus consectetur, vitae pellentesque dolor laoreet.</string>
   <string name="title_activity_second">SecondActivity</string>
-  
 
+  <string name="drawer_open">Open</string>
+  <string name="drawer_close">Close</string>
+  <string name="nav_item_home">Home</string>
+  <string name="nav_item_friends">Friends</string>
+  <string name="nav_item_notifications">Messages</string>
+
+  <!-- navigation drawer item labels  -->
+  <string-array name="nav_drawer_labels">
+    <item>@string/nav_item_home</item>
+    <item>@string/nav_item_friends</item>
+    <item>@string/nav_item_notifications</item>
+  </string-array>
+
+  <string name="title_messages">Messages</string>
+  <string name="title_friends">Friends</string>
+  <string name="title_home">Home</string>
+  
 </resources>

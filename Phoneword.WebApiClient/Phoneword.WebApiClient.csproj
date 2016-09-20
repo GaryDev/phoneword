@@ -59,6 +59,10 @@
       <Project>{86050fbc-29dc-4908-a275-075342c055d4}</Project>
       <Name>Phoneword.DataModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Phoneword.ViewModel\Phoneword.ViewModel.csproj">
+      <Project>{cb4a5afa-9147-47a4-846f-12fa9057d5c4}</Project>
+      <Name>Phoneword.ViewModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

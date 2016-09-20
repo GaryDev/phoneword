@@ -1,5 +1,5 @@
 
-using Phoneword.DataModel;
+using Phoneword.ViewModel;
 using Phoneword.Util;
 
 namespace Phoneword.Command

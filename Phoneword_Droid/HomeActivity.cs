@@ -14,6 +14,7 @@ using Android.Support.V4.View;
 using Android.Support.Design.Widget;
 using static Android.Support.Design.Widget.NavigationView;
 using Android.Widget;
+using Android.Util;
 
 namespace Phoneword_Droid
 {
@@ -25,8 +26,6 @@ namespace Phoneword_Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            // Create your application here
         }
 
         protected override int GetLayoutId()
@@ -38,8 +37,9 @@ namespace Phoneword_Droid
         {
             Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
-            
-            SupportActionBar.Title = iSharedPref.GetString("Username", string.Empty);
+
+            //SupportActionBar.Title = iSharedPref.GetString("Username", string.Empty);
+            SupportActionBar.Title = string.Empty;
             SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.ic_menu);
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             //SupportActionBar.SetHomeButtonEnabled(true);
@@ -65,7 +65,7 @@ namespace Phoneword_Droid
                 Toast.MakeText(this, "Snaker Action", ToastLength.Long).Show();
             });
             bar.Show();
-        }        
+        }
 
         private void OnNavViewItemSelected(object sender, NavigationItemSelectedEventArgs e)
         {
@@ -76,6 +76,25 @@ namespace Phoneword_Droid
             Toast.MakeText(this, menuItem.ToString(), ToastLength.Long).Show();
         }
 
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.menu_search, menu);
+
+            IMenuItem searchMenu = menu.FindItem(Resource.Id.action_search);
+            searchMenu.ExpandActionView();
+
+            SearchView searchView = (SearchView)searchMenu.ActionView;
+            searchView.Iconified = false;
+            searchView.SearchClick += OnSearchViewIconClicked;
+
+            return true;
+        }
+
+        private void OnSearchViewIconClicked(object sender, EventArgs e)
+        {
+            GoToSearchView();
+        }
+
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             int id = item.ItemId;
@@ -84,11 +103,17 @@ namespace Phoneword_Droid
                 case Android.Resource.Id.Home:
                     mDrawerLayout.OpenDrawer(GravityCompat.Start);
                     break;
-                default:
+                case Resource.Id.action_search:
+                    //GoToSearchView();
                     break;
             }
-
             return base.OnOptionsItemSelected(item);
+        }
+
+        private void GoToSearchView()
+        {
+            Intent intent = new Intent(this, typeof(SearchActivity));
+            StartActivity(intent);
         }
     }
 }

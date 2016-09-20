@@ -1,0 +1,13 @@
+D:\DEV\NET\Phoneword\Phoneword.Services\bin\Debug\Phoneword.Services.dll
+D:\DEV\NET\Phoneword\Phoneword.Services\bin\Debug\Phoneword.Services.pdb
+D:\DEV\NET\Phoneword\Phoneword.Services\bin\Debug\AutoMapper.dll
+D:\DEV\NET\Phoneword\Phoneword.Services\bin\Debug\Phoneword.DataModel.dll
+D:\DEV\NET\Phoneword\Phoneword.Services\bin\Debug\Phoneword.Entities.dll
+D:\DEV\NET\Phoneword\Phoneword.Services\bin\Debug\EntityFramework.dll
+D:\DEV\NET\Phoneword\Phoneword.Services\bin\Debug\Phoneword.DataModel.pdb
+D:\DEV\NET\Phoneword\Phoneword.Services\bin\Debug\Phoneword.Entities.pdb
+D:\DEV\NET\Phoneword\Phoneword.Services\bin\Debug\AutoMapper.xml
+D:\DEV\NET\Phoneword\Phoneword.Services\bin\Debug\EntityFramework.xml
+D:\DEV\NET\Phoneword\Phoneword.Services\obj\Debug\Phoneword.Services.csprojResolveAssemblyReference.cache
+D:\DEV\NET\Phoneword\Phoneword.Services\obj\Debug\Phoneword.Services.dll
+D:\DEV\NET\Phoneword\Phoneword.Services\obj\Debug\Phoneword.Services.pdb
