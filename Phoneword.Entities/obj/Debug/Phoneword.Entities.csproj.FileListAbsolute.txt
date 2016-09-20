@@ -1,4 +1,0 @@
-D:\DEV\NET\Phoneword\Phoneword.Entities\bin\Debug\Phoneword.Entities.dll
-D:\DEV\NET\Phoneword\Phoneword.Entities\bin\Debug\Phoneword.Entities.pdb
-D:\DEV\NET\Phoneword\Phoneword.Entities\obj\Debug\Phoneword.Entities.dll
-D:\DEV\NET\Phoneword\Phoneword.Entities\obj\Debug\Phoneword.Entities.pdb
