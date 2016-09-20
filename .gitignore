@@ -4,8 +4,16 @@
 /packages
 /Phoneword.DataModel/bin
 /Phoneword.DataModel/obj
+/Phoneword.Entities/bin
+/Phoneword.Entities/obj
+/Phoneword.IocResolver/bin
+/Phoneword.IocResolver/obj
 /phoneword.rest/bin
 /phoneword.rest/obj
+/Phoneword.Services/bin
+/Phoneword.Services/obj
+/Phoneword.ViewModel/bin
+/Phoneword.ViewModel/obj
 /Phoneword.WebApiClient/bin
 /Phoneword.WebApiClient/obj
 /Phoneword_Droid/bin

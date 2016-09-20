@@ -18,9 +18,9 @@ namespace Phoneword.Services
         /// <summary>
         /// Public constructor.
         /// </summary>
-        public ProductService()
+        public ProductService(UnitOfWork unitOfWork)
         {
-            _unitOfWork = new UnitOfWork();
+            _unitOfWork = unitOfWork;
         }
 
         public ProductEntity CreateProduct(ProductEntity productEntity)

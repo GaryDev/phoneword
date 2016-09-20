@@ -20,9 +20,9 @@ namespace phoneword.rest.Controllers
         /// <summary>
         /// Public constructor to initialize product service instance
         /// </summary>
-        public ProductController()
+        public ProductController(IProductService productService)
         {
-            _productService = new ProductService();
+            _productService = productService;
         }
 
         #endregion
