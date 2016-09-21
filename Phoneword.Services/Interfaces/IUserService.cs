@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace phoneword.rest.Authentication
+namespace Phoneword.Services
 {
-    public interface IAuthService
+    public interface IUserService
     {
-        int Authenticate(string userName, string password);
+        int Authenticate(string username, string password);
     }
 }

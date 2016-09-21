@@ -1,4 +1,4 @@
-﻿using phoneword.rest.Authentication;
+﻿using Phoneword.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,7 +39,7 @@ namespace phoneword.rest.Filters
         protected override bool OnAuthorizeUser(string username, string password, HttpActionContext actionContext)
         {
             var provider = actionContext.ControllerContext.Configuration
-                               .DependencyResolver.GetService(typeof(IAuthService)) as IAuthService;
+                               .DependencyResolver.GetService(typeof(IUserService)) as IUserService;
             if (provider != null)
             {
                 var userId = provider.Authenticate(username, password);

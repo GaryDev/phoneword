@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using phoneword.rest.Filters;
 using Phoneword.Entities;
 using Phoneword.Services;
 using Phoneword.ViewModel;
@@ -11,6 +12,8 @@ using System.Web.Http;
 
 namespace phoneword.rest.Controllers
 {
+    [ApiAuthenticationFilter]
+    [RoutePrefix("api/v1/product")]
     public class ProductController : ApiController
     {
         private readonly IProductService _productService;
@@ -28,6 +31,8 @@ namespace phoneword.rest.Controllers
         #endregion
 
         // GET api/product
+        [HttpGet]
+        [Route("all")]
         public HttpResponseMessage Get()
         {
             try
@@ -45,6 +50,8 @@ namespace phoneword.rest.Controllers
         }
 
         // GET api/product/5
+        [HttpGet]
+        [Route("{id:int}")]
         public HttpResponseMessage Get(int id)
         {
             try
@@ -61,6 +68,8 @@ namespace phoneword.rest.Controllers
         }
 
         // POST api/product
+        [HttpPost]
+        [Route("create")]
         public HttpResponseMessage Post([FromBody] ProductViewModel product)
         {
             try
@@ -79,6 +88,8 @@ namespace phoneword.rest.Controllers
         }
 
         // PUT api/product/5
+        [HttpPut]
+        [Route("modify/{id:int}")]
         public HttpResponseMessage Put(int id, [FromBody]ProductViewModel product)
         {
             try
@@ -97,6 +108,8 @@ namespace phoneword.rest.Controllers
         }
 
         // DELETE api/product/5
+        [HttpDelete]
+        [Route("delete/{id:int}")]
         public HttpResponseMessage Delete(int id)
         {
             try

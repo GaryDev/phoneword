@@ -14,6 +14,7 @@ namespace Phoneword.Services
         public void SetUp(IRegisterComponent registerComponent)
         {
             registerComponent.RegisterType<IProductService, ProductService>();
+            registerComponent.RegisterType<IUserService, UserService>();
         }
     }
 }

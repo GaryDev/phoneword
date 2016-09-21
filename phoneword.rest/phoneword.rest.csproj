@@ -112,8 +112,6 @@
     <Compile Include="Actions\AuthenticationAction.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Authentication\AuthService.cs" />
-    <Compile Include="Authentication\IAuthService.cs" />
     <Compile Include="Controllers\AuthenticationController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Filters\ApiAuthenticationFilter.cs" />
