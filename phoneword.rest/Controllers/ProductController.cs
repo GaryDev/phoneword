@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using phoneword.rest.ActionFilters;
 using phoneword.rest.Filters;
 using Phoneword.Entities;
 using Phoneword.Services;
@@ -12,7 +13,7 @@ using System.Web.Http;
 
 namespace phoneword.rest.Controllers
 {
-    [ApiAuthenticationFilter]
+    [AuthorizationRequired]
     [RoutePrefix("api/v1/product")]
     public class ProductController : ApiController
     {

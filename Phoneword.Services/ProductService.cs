@@ -29,6 +29,8 @@ namespace Phoneword.Services
             {
                 Mapper.Initialize(cfg => cfg.CreateMap<ProductEntity, Product>());
                 var product = Mapper.Map<ProductEntity, Product>(productEntity);
+                product.UniqueId = Guid.NewGuid();
+                product.ProductId = GetMaxProductId() + 1;
                 using (var scope = new TransactionScope())
                 {
                     _unitOfWork.ProductRepository.Insert(product);
@@ -53,7 +55,7 @@ namespace Phoneword.Services
 
                 using (var scope = new TransactionScope())
                 {
-                    var product = _unitOfWork.ProductRepository.GetByID(productId);
+                    var product = _unitOfWork.ProductRepository.Get(p => p.ProductId == productId);
                     if (product != null)
                     {
                         _unitOfWork.ProductRepository.Delete(product);
@@ -93,7 +95,7 @@ namespace Phoneword.Services
         {
             try
             {
-                var product = _unitOfWork.ProductRepository.GetByID(productId);
+                var product = _unitOfWork.ProductRepository.Get(p => p.ProductId == productId);
                 if (product != null)
                 {
                     Mapper.Initialize(cfg => cfg.CreateMap<Product, ProductEntity>());
@@ -117,20 +119,33 @@ namespace Phoneword.Services
                 else if (productEntity == null)
                     throw new Exception("Product data is invalid");
 
-                var product = _unitOfWork.ProductRepository.GetByID(productId);
-                using (var scope = new TransactionScope())
+                var product = _unitOfWork.ProductRepository.Get(p => p.ProductId == productId);
+                if (product != null)
                 {
-                    product.ProductName = productEntity.ProductName;
-                    _unitOfWork.ProductRepository.Update(product);
-                    _unitOfWork.Save();
-                    scope.Complete();
-                }
+                    using (var scope = new TransactionScope())
+                    {
+                        product.ProductName = productEntity.ProductName;
+                        _unitOfWork.ProductRepository.Update(product);
+                        _unitOfWork.Save();
+                        scope.Complete();
+                    }
+                }                
                 return GetProductById(productId);
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+        }
+
+        private int GetMaxProductId()
+        {
+            var products = _unitOfWork.ProductRepository.GetAll().ToList();
+            if (products == null || !products.Any())
+                return 0;
+
+            int maxId = products.Max(p => p.ProductId);
+            return maxId;
         }
     }
 }

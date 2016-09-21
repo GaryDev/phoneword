@@ -19,6 +19,7 @@ namespace Phoneword.DataModel
             this.Token = new HashSet<Token>();
         }
     
+        public System.Guid UniqueId { get; set; }
         public int UserId { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }

@@ -7,39 +7,41 @@
       <Schema Namespace="PhonewordModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Product">
           <Key>
-            <PropertyRef Name="ProductId" />
+            <PropertyRef Name="UniqueId" />
           </Key>
+          <Property Name="UniqueId" Type="uniqueidentifier" Nullable="false" />
           <Property Name="ProductId" Type="int" Nullable="false" />
           <Property Name="ProductName" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="Token">
           <Key>
-            <PropertyRef Name="TokenId" />
+            <PropertyRef Name="UniqueId" />
           </Key>
-          <Property Name="TokenId" Type="int" Nullable="false" />
-          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="UniqueId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="User" Type="uniqueidentifier" Nullable="false" />
           <Property Name="AuthToken" Type="nvarchar" MaxLength="250" Nullable="false" />
           <Property Name="IssuedOn" Type="datetime" Nullable="false" />
           <Property Name="ExpiresOn" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="User">
           <Key>
-            <PropertyRef Name="UserId" />
+            <PropertyRef Name="UniqueId" />
           </Key>
+          <Property Name="UniqueId" Type="uniqueidentifier" Nullable="false" />
           <Property Name="UserId" Type="int" Nullable="false" />
           <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="50" />
         </EntityType>
-        <Association Name="FK_Tokens_User_UserId">
+        <Association Name="FK_Tokens_User_User">
           <End Role="User" Type="Self.User" Multiplicity="1" />
           <End Role="Token" Type="Self.Token" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
-              <PropertyRef Name="UserId" />
+              <PropertyRef Name="UniqueId" />
             </Principal>
             <Dependent Role="Token">
-              <PropertyRef Name="UserId" />
+              <PropertyRef Name="User" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -47,7 +49,7 @@
           <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Token" EntityType="Self.Token" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK_Tokens_User_UserId" Association="Self.FK_Tokens_User_UserId">
+          <AssociationSet Name="FK_Tokens_User_User" Association="Self.FK_Tokens_User_User">
             <End Role="User" EntitySet="User" />
             <End Role="Token" EntitySet="Token" />
           </AssociationSet>
@@ -59,41 +61,43 @@
       <Schema Namespace="PhonewordModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Product">
           <Key>
-            <PropertyRef Name="ProductId" />
+            <PropertyRef Name="UniqueId" />
           </Key>
+          <Property Name="UniqueId" Type="Guid" Nullable="false" />
           <Property Name="ProductId" Type="Int32" Nullable="false" />
           <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
         <EntityType Name="Token">
           <Key>
-            <PropertyRef Name="TokenId" />
+            <PropertyRef Name="UniqueId" />
           </Key>
-          <Property Name="TokenId" Type="Int32" Nullable="false" />
-          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="UniqueId" Type="Guid" Nullable="false" />
+          <Property Name="User" Type="Guid" Nullable="false" />
           <Property Name="AuthToken" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="IssuedOn" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="ExpiresOn" Type="DateTime" Nullable="false" Precision="3" />
-          <NavigationProperty Name="User" Relationship="Self.FK_Tokens_User_UserId" FromRole="Token" ToRole="User" />
+          <NavigationProperty Name="User1" Relationship="Self.FK_Tokens_User_User" FromRole="Token" ToRole="User" />
         </EntityType>
         <EntityType Name="User">
           <Key>
-            <PropertyRef Name="UserId" />
+            <PropertyRef Name="UniqueId" />
           </Key>
+          <Property Name="UniqueId" Type="Guid" Nullable="false" />
           <Property Name="UserId" Type="Int32" Nullable="false" />
           <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Token" Relationship="Self.FK_Tokens_User_UserId" FromRole="User" ToRole="Token" />
+          <NavigationProperty Name="Token" Relationship="Self.FK_Tokens_User_User" FromRole="User" ToRole="Token" />
         </EntityType>
-        <Association Name="FK_Tokens_User_UserId">
+        <Association Name="FK_Tokens_User_User">
           <End Role="User" Type="Self.User" Multiplicity="1" />
           <End Role="Token" Type="Self.Token" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
-              <PropertyRef Name="UserId" />
+              <PropertyRef Name="UniqueId" />
             </Principal>
             <Dependent Role="Token">
-              <PropertyRef Name="UserId" />
+              <PropertyRef Name="User" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -101,7 +105,7 @@
           <EntitySet Name="Product" EntityType="Self.Product" />
           <EntitySet Name="Token" EntityType="Self.Token" />
           <EntitySet Name="User" EntityType="Self.User" />
-          <AssociationSet Name="FK_Tokens_User_UserId" Association="Self.FK_Tokens_User_UserId">
+          <AssociationSet Name="FK_Tokens_User_User" Association="Self.FK_Tokens_User_User">
             <End Role="User" EntitySet="User" />
             <End Role="Token" EntitySet="Token" />
           </AssociationSet>
@@ -115,6 +119,7 @@
           <EntitySetMapping Name="Product">
             <EntityTypeMapping TypeName="PhonewordModel.Product">
               <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
                 <ScalarProperty Name="ProductId" ColumnName="ProductId" />
                 <ScalarProperty Name="ProductName" ColumnName="ProductName" />
               </MappingFragment>
@@ -123,8 +128,8 @@
           <EntitySetMapping Name="Token">
             <EntityTypeMapping TypeName="PhonewordModel.Token">
               <MappingFragment StoreEntitySet="Token">
-                <ScalarProperty Name="TokenId" ColumnName="TokenId" />
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
+                <ScalarProperty Name="User" ColumnName="User" />
                 <ScalarProperty Name="AuthToken" ColumnName="AuthToken" />
                 <ScalarProperty Name="IssuedOn" ColumnName="IssuedOn" />
                 <ScalarProperty Name="ExpiresOn" ColumnName="ExpiresOn" />
@@ -134,6 +139,7 @@
           <EntitySetMapping Name="User">
             <EntityTypeMapping TypeName="PhonewordModel.User">
               <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="UserName" ColumnName="UserName" />
                 <ScalarProperty Name="Password" ColumnName="Password" />

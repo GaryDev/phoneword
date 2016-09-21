@@ -14,6 +14,7 @@ namespace Phoneword.DataModel
     
     public partial class Product
     {
+        public System.Guid UniqueId { get; set; }
         public int ProductId { get; set; }
         public string ProductName { get; set; }
     }

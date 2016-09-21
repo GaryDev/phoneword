@@ -14,12 +14,12 @@ namespace Phoneword.DataModel
     
     public partial class Token
     {
-        public int TokenId { get; set; }
-        public int UserId { get; set; }
+        public System.Guid UniqueId { get; set; }
+        public System.Guid User { get; set; }
         public string AuthToken { get; set; }
         public System.DateTime IssuedOn { get; set; }
         public System.DateTime ExpiresOn { get; set; }
     
-        public virtual User User { get; set; }
+        public virtual User User1 { get; set; }
     }
 }

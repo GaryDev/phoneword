@@ -15,6 +15,7 @@ namespace Phoneword.Services
         {
             registerComponent.RegisterType<IProductService, ProductService>();
             registerComponent.RegisterType<IUserService, UserService>();
+            registerComponent.RegisterType<ITokenService, TokenService>();
         }
     }
 }
