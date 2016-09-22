@@ -49,11 +49,11 @@ namespace phoneword.rest.Controllers
                         return GetAuthToken(userId);
                     }
                 }
-                return Request.CreateResponse(HttpStatusCode.Unauthorized, new ApiError { ErrorCode = "401", ErrorMessage = "Unauthorized" });
+                return Request.CreateResponse(HttpStatusCode.Unauthorized, new ApiError { ErrorCode = "401", ErrorDescription = "Unauthorized" });
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorMessage = ex.Message });
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorDescription = ex.Message });
             }
         }
 

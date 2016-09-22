@@ -1,4 +1,5 @@
-﻿using System;
+﻿using phoneword.rest.ActionFilters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -14,6 +15,9 @@ namespace phoneword.rest
 
             // Web API routes
             config.MapHttpAttributeRoutes();
+
+            // Logger Filter
+            config.Filters.Add(new LoggingFilterAttribute());
         }
     }
 }

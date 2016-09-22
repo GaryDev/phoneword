@@ -11,6 +11,12 @@ namespace Phoneword.ViewModel
         public string ErrorCode { get; set; }
 
         [JsonProperty(PropertyName = "errMessage")]
-        public string ErrorMessage { get; set; }
+        public string ErrorDescription { get; set; }
+
+        [JsonProperty(PropertyName = "errStatus")]
+        public string HttpStatus { get; set; }
+
+        [JsonProperty(PropertyName = "errReason")]
+        public string ReasonPhrase { get; set; }
     }
 }

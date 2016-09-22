@@ -56,11 +56,11 @@ namespace phoneword.rest
                 requestDate = headers["HTTP_X_DATE"];
 
             if (string.IsNullOrWhiteSpace(requestDate) || !ValidateDate(requestDate))
-                return new ApiError { ErrorCode = "403", ErrorMessage = "Date is invalid" };
+                return new ApiError { ErrorCode = "403", ErrorDescription = "Date is invalid" };
 
             if (string.IsNullOrWhiteSpace(requestToken) || 
                 !ValidateToken(requestToken, requestDate, request.HttpMethod, requestParameter))
-                return new ApiError { ErrorCode = "401", ErrorMessage = "Unauthorized" };
+                return new ApiError { ErrorCode = "401", ErrorDescription = "Unauthorized" };
 
             return null;
         }

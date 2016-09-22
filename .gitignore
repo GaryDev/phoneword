@@ -10,6 +10,7 @@
 /Phoneword.IocResolver/obj
 /phoneword.rest/bin
 /phoneword.rest/obj
+/phoneword.rest/APILog
 /Phoneword.Services/bin
 /Phoneword.Services/obj
 /Phoneword.ViewModel/bin

@@ -46,7 +46,7 @@ namespace phoneword.rest.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorMessage = ex.Message });
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorDescription = ex.Message });
             }
         }
 
@@ -64,7 +64,7 @@ namespace phoneword.rest.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorMessage = ex.Message });
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorDescription = ex.Message });
             }
         }
 
@@ -84,7 +84,7 @@ namespace phoneword.rest.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorMessage = ex.Message });
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorDescription = ex.Message });
             }
         }
 
@@ -104,7 +104,7 @@ namespace phoneword.rest.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorMessage = ex.Message });
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorDescription = ex.Message });
             }
         }
 
@@ -121,7 +121,7 @@ namespace phoneword.rest.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorMessage = ex.Message });
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorDescription = ex.Message });
             }
         }
     }

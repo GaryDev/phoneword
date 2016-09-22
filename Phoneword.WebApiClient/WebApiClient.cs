@@ -46,7 +46,7 @@ namespace Phoneword.Util
                 if (response.StatusCode != HttpStatusCode.OK)
                 {
                     string message = string.Format("Request failed. Received HTTP {0}", response.StatusCode);
-                    ApiError error = new ApiError { ErrorCode = "0", ErrorMessage = message };
+                    ApiError error = new ApiError { ErrorCode = "0", ErrorDescription = message };
                     failure?.Invoke(JSONUtil.ToJSONStr(error));
                 }
                 else
@@ -85,7 +85,7 @@ namespace Phoneword.Util
                 }
                 catch (Exception ex)
                 {
-                    ApiError error = new ApiError { ErrorCode = "0", ErrorMessage = ex.Message };
+                    ApiError error = new ApiError { ErrorCode = "0", ErrorDescription = ex.Message };
                     failure?.Invoke(JSONUtil.ToJSONStr(error));
                 }
             }
@@ -111,7 +111,7 @@ namespace Phoneword.Util
                 }
                 catch (Exception ex)
                 {
-                    ApiError error = new ApiError { ErrorCode = "0", ErrorMessage = ex.Message };
+                    ApiError error = new ApiError { ErrorCode = "0", ErrorDescription = ex.Message };
                     failure?.Invoke(JSONUtil.ToJSONStr(error));
                 }
             }

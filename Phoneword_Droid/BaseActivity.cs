@@ -89,7 +89,7 @@ namespace Phoneword_Droid
 
             string text;
             if (error != null)
-                text = string.Format("({0}) - {1}", error.ErrorCode, error.ErrorMessage);
+                text = string.Format("({0}) - {1}", error.ErrorCode, error.ErrorDescription);
             else
                 text = GetString(Resource.String.msg_api_fail);
 
