@@ -1,5 +1,5 @@
 ﻿using NLog;
-using phoneword.rest.ErrorHelper;
+using Phoneword.Services.ErrorHelper;
 using Phoneword.Util;
 using System;
 using System.Collections.Generic;

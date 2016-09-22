@@ -1,5 +1,5 @@
-﻿using phoneword.rest.ErrorHelper;
-using phoneword.rest.Helpers;
+﻿using phoneword.rest.Helpers;
+using Phoneword.Services.ErrorHelper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

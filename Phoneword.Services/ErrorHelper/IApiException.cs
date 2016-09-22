@@ -5,7 +5,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace phoneword.rest.ErrorHelper
+namespace Phoneword.Services.ErrorHelper
 {
     public interface IApiException
     {

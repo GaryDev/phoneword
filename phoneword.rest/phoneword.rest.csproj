@@ -120,16 +120,13 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AuthenticationController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
-    <Compile Include="ErrorHelper\ApiDataException.cs" />
-    <Compile Include="ErrorHelper\ApiBizException.cs" />
-    <Compile Include="ErrorHelper\ApiException.cs" />
-    <Compile Include="ErrorHelper\IApiException.cs" />
     <Compile Include="Filters\ApiAuthenticationFilter.cs" />
     <Compile Include="Filters\BasicAuthenticationIdentity.cs" />
     <Compile Include="Filters\GenericAuthenticationFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\ExceptionHelper.cs" />
     <Compile Include="Helpers\NLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

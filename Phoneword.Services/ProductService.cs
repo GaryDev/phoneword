@@ -8,6 +8,8 @@ using Phoneword.DataModel.UnitOfWork;
 using AutoMapper;
 using Phoneword.DataModel;
 using System.Transactions;
+using Phoneword.Services.ErrorHelper;
+using System.Net;
 
 namespace Phoneword.Services
 {
@@ -51,7 +53,7 @@ namespace Phoneword.Services
             try
             {
                 if (productId <= 0)
-                    throw new Exception("Product id is invalid");
+                    throw new ApiBizException(1001, "Product id is invalid", HttpStatusCode.BadRequest);
 
                 using (var scope = new TransactionScope())
                 {
@@ -67,7 +69,7 @@ namespace Phoneword.Services
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new ApiException { ErrorCode = 999, ErrorDescription = ex.Message, HttpStatus = HttpStatusCode.InternalServerError };
             }                        
             return success;
         }
@@ -83,11 +85,11 @@ namespace Phoneword.Services
                     var productsModel = Mapper.Map<List<Product>, List<ProductEntity>>(products);
                     return productsModel;
                 }
-                throw new Exception("Products not found");
+                throw new ApiDataException(1001, "Products not found", HttpStatusCode.NotFound);
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new ApiException { ErrorCode = 999, ErrorDescription = ex.Message, HttpStatus = HttpStatusCode.InternalServerError };
             }
         }
 
@@ -102,11 +104,11 @@ namespace Phoneword.Services
                     var productModel = Mapper.Map<Product, ProductEntity>(product);
                     return productModel;
                 }
-                throw new Exception(string.Format("No product found for id {0}", productId));
+                throw new ApiDataException(1001, string.Format("No product found for id {0}", productId), HttpStatusCode.NotFound);
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new ApiException { ErrorCode = 999, ErrorDescription = ex.Message, HttpStatus = HttpStatusCode.InternalServerError };
             }
         }
 
@@ -115,9 +117,9 @@ namespace Phoneword.Services
             try
             {
                 if (productId <= 0)
-                    throw new Exception("Product id is invalid");
+                    throw new ApiBizException(1001, "Product id is invalid", HttpStatusCode.BadRequest);
                 else if (productEntity == null)
-                    throw new Exception("Product data is invalid");
+                    throw new ApiBizException(1001, "Product data is invalid", HttpStatusCode.BadRequest);
 
                 var product = _unitOfWork.ProductRepository.Get(p => p.ProductId == productId);
                 if (product != null)
@@ -134,7 +136,7 @@ namespace Phoneword.Services
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new ApiException { ErrorCode = 999, ErrorDescription = ex.Message, HttpStatus = HttpStatusCode.InternalServerError };
             }
         }
 

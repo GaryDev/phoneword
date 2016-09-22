@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using phoneword.rest.ActionFilters;
 using phoneword.rest.Filters;
+using phoneword.rest.Helpers;
 using Phoneword.Entities;
 using Phoneword.Services;
 using Phoneword.ViewModel;
@@ -46,7 +47,7 @@ namespace phoneword.rest.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorDescription = ex.Message });
+                return ex.CreateErrorResponse(Request);
             }
         }
 
@@ -64,7 +65,7 @@ namespace phoneword.rest.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorDescription = ex.Message });
+                return ex.CreateErrorResponse(Request);
             }
         }
 
@@ -84,7 +85,7 @@ namespace phoneword.rest.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorDescription = ex.Message });
+                return ex.CreateErrorResponse(Request);
             }
         }
 
@@ -104,7 +105,7 @@ namespace phoneword.rest.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorDescription = ex.Message });
+                return ex.CreateErrorResponse(Request);
             }
         }
 
@@ -121,7 +122,7 @@ namespace phoneword.rest.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new ApiError { ErrorCode = "500", ErrorDescription = ex.Message });
+                return ex.CreateErrorResponse(Request);
             }
         }
     }

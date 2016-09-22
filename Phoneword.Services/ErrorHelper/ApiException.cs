@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 
-namespace phoneword.rest.ErrorHelper
+namespace Phoneword.Services.ErrorHelper
 {
     public class ApiException : Exception, IApiException
     {
